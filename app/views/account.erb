@@ -1,5 +1,26 @@
 <h1>Welcome</h1>
 
 <p>We are currently working on your account.</p>
+<h3>Your balance is: $<%= @user.balance %>.</h3>
+<h2>Please choose from the account options below.</h2>
 
+<h2>Make a deposit:
+<h3>How much will you deposit?</h3>
+<form action='/account' method='POST'>
+<label for="deposit"> Deposit Amount: </h2>
+<input id="deposit" type="text" name="deposit">
+<br>
+<h2>Make a withdrawl:
+<h3>How much will you withdrawl?</h3>
+<label for="withdrawl"> Withdrawl Amount: </h2>
+<input id="withdrawl" type="text" name="withdrawl">
+<br>
+<h2>Transfer Funds:
+<h3>How much will you transfer?</h3>
+<label for="transfer"> Transfer Amount: </h2>
+<input id="transfer" type="text" name="transfer">
+<br>
+<input id="transaction" type="submit" value="Start Transaction">
+
+<h3>All Set? Please log out.</h3>
 <p><a href="/logout">Log Out</a></p>
